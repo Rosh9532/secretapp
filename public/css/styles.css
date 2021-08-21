@@ -1,16 +1,159 @@
 
 body {
-  background-color: #E8ECEF;
+  
+  background-position: center;
+  background-size: 100%;
+  background-attachment: fixed;
+  
 }
-
 .centered {
-    padding-top: 200px;
+    padding-top:0px;
     text-align: center;
+
 }
 
 .secret-text {
+  height: auto;
+  width: 200px;
   text-align: center;
-  font-size: 2rem;
+  color: rgb(0, 0, 0);
+  background-color:transparent;
+  border-radius: 10rem;
+  
+}
+
+.text{
+  width: 200px;
+}
+
+.logo{
+ height: 300px;
+ width: 100%;
+ box-sizing: border-box;
+ padding-top: 70px ;
+}
+
+.logo img{
+  width:500px;
+  height: 200px;
+  object-fit:none;
+}
+
+.lead{
   color: #fff;
-  background-color: #000;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10rem;
+}
+
+.r{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.log_sub{
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+  bottom: 10px;
+
+}
+
+.navbar{
+  height: 100px;
+  
+  background-color: #000000;
+  margin-top: -15px;
+  background: rgba(0, 0, 0, 0.43);
+  position: sticky;
+  top: 0;
+  
+ 
+  z-index: 1;
+  padding-left: 30px;
+}
+
+.navbar .nav_logo{
+  width: auto;
+  height: auto;
+ box-sizing: border-box;
+ padding-left: 10px;
+ padding-right: 10px ;
+ padding-top: 10px ;
+ padding-bottom: 10px ;
+}
+
+.navbar img{
+  height: 70px;
+  width: 150px;
+}
+
+
+.submit_button{
+  margin-left: 10px;
+}
+
+
+.container img{
+  height: 250px;
+  
+}
+
+
+
+.contain img{
+  height: auto;
+  width: 500px;
+  
+}
+
+.container h1{
+  display: flex;
+  flex-direction: row;
+  padding-left: 39%;
+  
+}
+.contain{
+  box-sizing: border-box;
+  position: relative;
+  width: 500px;
+  margin-left: -40px;
+  padding-top: 0px;
+}
+.contain .text-block{
+  position: absolute;
+  bottom: 70px;
+  right: 150px;
+  background-color: transparent;
+  color: rgb(10, 9, 9);
+  
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 200px;
+} 
+
+.register_logo{
+  height: 150px;
+  margin-bottom: 50px;
+  margin-top: -70px;
+}
+
+
+
+.wrap{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  height: auto;
+  max-width: 100%;
+  
 }

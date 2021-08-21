@@ -11,6 +11,7 @@ const passport = require('passport');
 const passportLocalMongoose=require("passport-local-mongoose");
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const findOrCreate = require('mongoose-find-or-create')
+
 //const saltRounds = 1;
 //const User = require('./models/user');
 
@@ -19,6 +20,7 @@ const app=express();
 app.set('view engine','ejs');
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static("public"));
+
 
 
 app.use(session({
@@ -110,13 +112,13 @@ app.get("/register",function(request,response){
 	response.render("register");
 	});
 	
-/*app.get("/secrets",function(request,response){
+app.get("/secrets",function(request,response){
 	if(request.isAuthenticated()){
 		response.render("secrets");
 	}else{
 		response.redirect("/login");
 	}
-});*/
+});
 
 app.get("/secrets",function(request,response){
 	User.find({"secret":{$ne:null}},function(err,foundUsers){
@@ -137,7 +139,6 @@ app.get("/submit",function(request,response){
 	}else{
 		response.redirect("/login");
 	}
-	
 	});
 	
 app.post("/submit",function(request,response){
@@ -260,3 +261,4 @@ app.listen(
     process.env.PORT || 3000, 
     console.log("Server started")
 );
+
