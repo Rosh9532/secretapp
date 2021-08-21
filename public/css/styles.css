@@ -4,7 +4,7 @@ body {
   background-position: center;
   background-size: 100%;
   background-attachment: fixed;
-  
+  overflow-x: hidden;
 }
 .centered {
     padding-top:0px;
@@ -71,8 +71,7 @@ form{
 
 .navbar{
   height: 100px;
-  
-  background-color: #000000;
+  width: 100%;
   margin-top: -15px;
   background: rgba(0, 0, 0, 0.43);
   position: sticky;
@@ -129,6 +128,7 @@ form{
   width: 500px;
   margin-left: -40px;
   padding-top: 0px;
+  
 }
 .contain .text-block{
   position: absolute;

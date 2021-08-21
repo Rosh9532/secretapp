@@ -112,13 +112,13 @@ app.get("/register",function(request,response){
 	response.render("register");
 	});
 	
-app.get("/secrets",function(request,response){
-	if(request.isAuthenticated()){
-		response.render("secrets");
-	}else{
-		response.redirect("/login");
-	}
-});
+// app.get("/secrets",function(request,response){
+// 	if(request.isAuthenticated()){
+// 		response.render("secrets");
+// 	}else{
+// 		response.redirect("/login");
+// 	}
+// });
 
 app.get("/secrets",function(request,response){
 	User.find({"secret":{$ne:null}},function(err,foundUsers){
