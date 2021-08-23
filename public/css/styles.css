@@ -12,31 +12,49 @@ body {
 
 }
 
-.secret-text {
+.centered .secret-text {
   height: auto;
-  width: 200px;
+  width: 300px;
   text-align: center;
   color: rgb(0, 0, 0);
   background-color:transparent;
   border-radius: 10rem;
-  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 400px;
 }
 
 .text{
   width: 200px;
 }
 
-.logo{
+.centered .logo {
  height: 300px;
  width: 100%;
  box-sizing: border-box;
- padding-top: 70px ;
+ padding: 70px 35% ;
+ display: flex;
+ 
 }
 
 .logo img{
   width:500px;
   height: 200px;
   object-fit:none;
+}
+
+.centered .subm_logo{
+
+  width:auto;
+  height: 300px;
+  display: flex;
+  flex-direction: row ;
+  align-items: center;
+  justify-content: center;
+
+ 
 }
 
 .lead{
@@ -156,4 +174,16 @@ form{
   height: auto;
   max-width: 100%;
   
+}
+
+@media all and (max-width: 500px){
+  body {
+  
+    background-position: center;
+    background-size: 100%;
+    background-attachment: fixed;
+    overflow-x: hidden;
+  }
+
+
 }
