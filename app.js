@@ -80,7 +80,7 @@ passport.use(
     },
     function (accessToken, refreshToken, profile, cb) {
       console.log(profile);
-      User.findOrCreate({ googleId: profile.id }, function (err, user) {
+      User.findOrCreate({ googleId: profile.id,username: profile.emails[0].value }, function (err, user) {
         return cb(err, user);
       });
     }
